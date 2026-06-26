@@ -246,9 +246,10 @@ document.addEventListener('DOMContentLoaded', () => {
         galleryItems.forEach(item => {
             if (item.style.display !== 'none') {
                 const img = item.querySelector('img');
-                const title = item.querySelector('.gallery-item-title').textContent;
+                const titleEl = item.querySelector('.gallery-item-title');
+                const title = titleEl ? titleEl.textContent : (img && img.alt ? img.alt : 'Ekatva Samiti Event');
                 activeGallerySet.push({
-                    src: img.src,
+                    src: img ? img.src : '',
                     title: title
                 });
             }

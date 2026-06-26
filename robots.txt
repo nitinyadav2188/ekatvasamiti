@@ -1,0 +1,9 @@
+# www.robotstxt.org/
+# For Ekatva Samiti NGO Web Platform
+
+User-agent: *
+Allow: /
+
+# Host & Sitemap Directories
+Host: https://ekatvasamiti.org
+Sitemap: https://ekatvasamiti.org/sitemap.xml
